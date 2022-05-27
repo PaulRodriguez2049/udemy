@@ -1,0 +1,47 @@
+:root{
+    --width:150px
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+.deck__grid{
+    margin-top: 20px;
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(4 ,var(--width));
+}
+.card{
+    position: relative;
+    
+}
+.card img{
+    border:2px solid rgb(217, 214, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+}
+
+.cardBack{
+    width:var(--width);
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+}
+.cardFront{
+    width:var(--width);
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out;
+    
+}
+ .appear{
+    transform: rotateY(0deg);
+    transition-delay:0.5s ;
+}
+.flip-cover{
+    transform: rotateY(90deg);
+}
+.flip-back{
+    transition-delay:0.5s ;
+}
+
+
