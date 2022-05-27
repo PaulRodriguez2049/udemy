@@ -31,7 +31,7 @@ function App() {
   useEffect(()=>{
     
     if(choiceFirst && choiceSecond){
-     setFrozen(true)
+     setFrozen(true);
       
       if(choiceFirst.src===choiceSecond.src){
         
